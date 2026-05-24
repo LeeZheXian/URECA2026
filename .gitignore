@@ -1,13 +1,15 @@
 # Ignore datasets and models
 datasets/
-checkpoints/
+
 logs/
 .venv/
 __pycache__/
 *.pth
 *.ckpt
 *.pt
-.env# C extensions
+.env
+
+# C extensions
 *.so
 
 # Distribution / packaging
@@ -131,6 +133,9 @@ playground/
 demo_data/gr00t-gr1-apple-to-shelf/
 tmp/
 output/
-so101-checkpoints/
-results/
-demo_data/
+
+
+!so101-checkpoints/*.pth
+!so101-checkpoints/*.ckpt
+!so101-checkpoints/*.pt
+!so101-checkpoints/*.bin
